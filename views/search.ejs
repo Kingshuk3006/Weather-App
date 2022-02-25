@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div
+        class="background w-full h-screen bg-[url('/images/background.jpg')] bg-contain bg-no-repeat shadow-2xl bg-center flex flex-col items-center justify-evenly">
+        <div class="search">
+           
+                <h1 class="text-5xl font-bold text-[#311b92] tracking-widest m-8">What's The WEATHER</h1>
+                <h1 class="text-4xl font-bold text-[#311b92] tracking-widest m-12 text-center">In</h1>
+
+            <form action="/" method="post" class="flex justify-center">
+                <label for="input">
+                    <input type="text" placeholder="Search for Places"
+                        class="h-[3.25rem] w-60 px-4 rounded-tl-2xl focus:outline-0 border-b-4 border-[#311b92]" spellcheck="false"
+                        name="cityName">
+                    <button class="float-right bg-[#ce93d8]  rounded-br-2xl cursor-pointer border-b-4 border-[#311b92]"
+                        type="submit">
+                        <img src="/images/search.svg" alt="" class=" w-12 p-2">
+                    </button>
+
+                </label>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div
+        class="background w-full h-screen bg-[url('/images/background.jpg')] bg-contain bg-no-repeat shadow-2xl bg-center flex flex-col items-center justify-evenly">
+        <h2 class="text-5xl font-bold text-[#311b92] tracking-widest ml-8" id="location">
+            <%=city%>
+        </h2>
+        <div class="upper flex flex-col text-center">
+            <h1 class="text-8xl text-zinc-900 font-bold">
+                <%=temp%>°C
+            </h1>
+            <h2 class="my-4 text-5xl text-black-700 font-semibold flex flex-row items-center justify-center"><span>
+                    <%=description%>
+                </span><img src="<%=imageURL%> " alt="" class="w-20"></h2>
+            <h3 class="my-2 font-medium text-black-600 text-[1.8rem]">
+                <%=max_temp%>°C/<%=min_temp%>°C
+            </h3>
+            <h3 class="my-2 font-medium text-black-600 text-[1.5rem]">
+                <%=dayName%>, <%=date%>th <%=monthName%>
+                            <%= year %>
+            </h3>
+        </div>
+        <form action="/">
+            <div class="btn-back border-b-4 border-[#311b92] rounded">
+                <button class="border-2 border-zinc-800 rounded px-4 py-2 text-2xl font-semibold text-[#311b92]" type="submit">
+                    Back
+                </button>
+            </div>
+        </form>
+        
+    </div>
+    <script src="server.js"></script>
+</body>
+
+</html>
+
+<!---->
